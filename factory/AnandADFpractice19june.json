@@ -1,0 +1,15 @@
+{
+	"name": "AnandADFpractice19june",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "indiasouthcentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cd9489b0-f0a8-4ad0-9dc5-566a9de89434",
+		"tenantId": "31057f0b-d149-49e5-9e6b-7394bdb5244b"
+	}
+}

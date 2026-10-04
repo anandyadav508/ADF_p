@@ -1,0 +1,21 @@
+{
+	"name": "DS_sp_tbaleparquertsales",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureDataLake_dev",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "sales.parquet",
+				"fileSystem": "sink"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,21 @@
+{
+	"name": "DS_sink_paruqt",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureDataLake_dev",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Checkparquet",
+				"fileSystem": "Sink"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

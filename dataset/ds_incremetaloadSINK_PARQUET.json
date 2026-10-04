@@ -1,0 +1,33 @@
+{
+	"name": "ds_incremetaloadSINK_PARQUET",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureDataLake_dev",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"TABLE_NAME": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@CONCAT(UTCNOW(),'.PARQUET')",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().TABLE_NAME",
+					"type": "Expression"
+				},
+				"fileSystem": "SINK"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
