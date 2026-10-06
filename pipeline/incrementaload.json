@@ -140,47 +140,6 @@
 								},
 								"firstRowOnly": false
 							}
-						},
-						{
-							"name": "Script1",
-							"type": "Script",
-							"dependsOn": [
-								{
-									"activity": "Copy data1",
-									"dependencyConditions": [
-										"Succeeded"
-									]
-								}
-							],
-							"policy": {
-								"timeout": "0.12:00:00",
-								"retry": 0,
-								"retryIntervalInSeconds": 30,
-								"secureOutput": false,
-								"secureInput": false
-							},
-							"linkedServiceName": {
-								"referenceName": "LS_AzureSqlDatabase_anand",
-								"type": "LinkedServiceReference"
-							},
-							"typeProperties": {
-								"scripts": [
-									{
-										"parameters": [
-											{
-												"name": "Modified_Date",
-												"value": ""
-											},
-											{
-												"name": "table_name",
-												"value": ""
-											}
-										],
-										"type": "Query"
-									}
-								],
-								"scriptBlockExecutionTimeout": "02:00:00"
-							}
 						}
 					]
 				}
