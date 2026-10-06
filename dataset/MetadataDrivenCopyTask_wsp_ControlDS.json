@@ -1,0 +1,19 @@
+{
+	"name": "MetadataDrivenCopyTask_wsp_ControlDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AzureSqlDatabase_anand",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "MetadataDrivenCopyTask_wsp_20261006"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "Saleslt",
+			"table": "MainControlTable_wsp"
+		}
+	}
+}
