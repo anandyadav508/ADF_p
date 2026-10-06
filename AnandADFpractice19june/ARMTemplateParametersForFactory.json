@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "AnandADFpractice19june"
+		},
+		"LS_AzureDataLake_dev_accountKey": {
+			"value": ""
+		},
+		"LS_AzureSqlDatabase_anand_password": {
+			"value": ""
+		},
+		"LS_AzureDataLake_dev_properties_typeProperties_url": {
+			"value": "https://anandradf19sept2026.dfs.core.windows.net/"
+		},
+		"LS_AzureSqlDatabase_anand_properties_typeProperties_server": {
+			"value": "adeanandserver.database.windows.net"
+		},
+		"LS_AzureSqlDatabase_anand_properties_typeProperties_database": {
+			"value": "anand"
+		},
+		"LS_AzureSqlDatabase_anand_properties_typeProperties_userName": {
+			"value": "Anand.yadav"
+		},
+		"LS_REST_JSONPLACEHOLDER_properties_typeProperties_url": {
+			"value": "https://jsonplaceholder.typicode.com/"
+		}
+	}
+}
